@@ -1,0 +1,9 @@
+Web3=require('web3');
+fs = require('fs');
+web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+code = fs.readFileSync('voting.sol').toString();
+solc = require('solc');
+compiledCode = solc.compile(code);
+abiDefinition = JSON.parse(compiledCode.contracts[':voting'].interface);
+VotingContract = web3.eth.contract(abiDefinition);
+byteCode = compiledCode.contracts[':voting'].bytecode;
