@@ -64,3 +64,5 @@ Requirements: node js,ganache-cli
 In the file above, the line MimeType=x-scheme-handler/app; register app:// scheme handler, but to make it work we should update mime types database cache by executing command:
 
 sudo update-desktop-database 
+
+DATABASE TABLES
