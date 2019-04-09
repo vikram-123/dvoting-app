@@ -65,4 +65,7 @@ In the file above, the line MimeType=x-scheme-handler/app; register app:// schem
 
 sudo update-desktop-database 
 
-DATABASE TABLES
+DATABASE
+To create database execute the following command:
+
+mysql --user=username --password=password votedb < votedb.sql
