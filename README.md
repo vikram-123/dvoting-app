@@ -1,7 +1,8 @@
 # dvoting-app
 GUI based decentralized voting application using blockchain
 
-    Video: https://youtu.be/ipadnZ4kPLo
+Video: https://youtu.be/ipadnZ4kPLo
+
 Requirements: php,mysql,node.js,ganache-cli
 
 1. Download Materialize CSS files and paste them in project folder. (https://github.com/Dogfalo/materialize/releases/download/1.0.0/materialize-v1.0.0.zip)
@@ -68,9 +69,9 @@ Requirements: php,mysql,node.js,ganache-cli
 
 In the file above, the line MimeType=x-scheme-handler/app; register app:// scheme handler, but to make it work we should update mime types database cache by executing command:
 
-    sudo update-desktop-database 
+        sudo update-desktop-database 
 
 =>DATABASE
     To create database execute the following command:
     
-    mysql --user=username --password=password votedb < votedb.sql
+        mysql --user=username --password=password votedb < votedb.sql
